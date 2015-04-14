@@ -3,6 +3,11 @@ package main
 import "net/http"
 
 func index(w http.ResponseWriter, r *http.Request) {
+	if r.URL.Path != "" {
+		w.WriteHeader(http.StatusNotFound)
+		w.Write([]byte("Not Found"))
+		return
+	}
 	w.Write([]byte(indexHtml))
 }
 
