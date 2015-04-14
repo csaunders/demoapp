@@ -29,8 +29,8 @@ const indexHtml string = `
   <title>Demo Go App</title>
 </head>
 <body>
-  <p><a href="/magic.gif">See some Magic</a></p>
-  <p><a href="/deal.gif">Not a fan?</a></p>
+  <p><a href="/public/magic.gif">See some Magic</a></p>
+  <p><a href="/public/deal.gif">Not a fan?</a></p>
 </body>
 </html>
 `
